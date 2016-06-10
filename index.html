@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Elm | Dev. Challenge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checklist.css">
+
+</head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid no-hor-padding">
+                <div class="navbar-container">
+                    <div class="menu-item">
+                        <a href="/pages/about">ABOUT<span class="hidden-xs">&nbsp;ELM</span></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/pages/about">GUIDES</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/pages/about">Logo</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/pages/about">BLOG</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/pages/about">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid course-title-container">
+            <div class="course-title">
+                <div class="course-title-main">FINDING A JOB WITH MEANING</div>
+                <div class="course-title-sub">and doing it extremely well</div>
+            </div>
+        </div>
+        <div class="container-fluid no-hor-padding video-container">
+            <div class=iframe-container>
+                <div id="player"></div>
+            </div>
+        </div>
+        <div class="container-fluid no-hor-padding tab-container">
+            <div>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="section-tabs active">
+                        <a class="section-tabs-text" id="ch0" onclick="seek(2)" data-toggle="tab" href="#tab1" aria-controls="tab1">INTRO<span class="hidden-xs">DUCTION</span></a>
+                    </li>
+                    <li class="section-tabs" role="presentation">
+                        <a class="section-tabs-text" id="ch1" onclick="seek(132)" data-toggle="tab" href="#tab2" aria-controls="tab2">CH 1<span class="hidden-xs">&nbsp;| MY STORY</span></a>
+                    </li>
+                    <li class="section-tabs" role="presentation">
+                        <a class="section-tabs-text" id="ch2" onclick="seek(337)" data-toggle="tab" href="#tab3" aria-controls="tab3">CH 2<span class="hidden-xs">&nbsp;| DISCOVERING PASSION</span></a>
+                    </li>
+                    <li class="section-tabs" role="presentation">
+                        <a class="section-tabs-text" id="ch3" onclick="seek(762)" data-toggle="tab" href="#tab4" aria-controls="tab4">CH 3<span class="hidden-xs">&nbsp;| ROADBLOCKS</span></a>
+                    </li>
+                </ul>
+                <div class="panes-container tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1"></div>
+                    <div role="tabpanel" class="tab-pane" id="tab2"></div>
+                    <div role="tabpanel" class="tab-pane" id="tab3">
+                        <div class="pane-options-container">
+                            <div class="pull-left pane-options">TOOLS</div>
+                            <div class="pull-right pane-options print" onclick="myFunction()"><i class="fa fa-print" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="pane-questions-container">
+                            <ul class="pane-questions-list">
+                                <li>
+                                    <input type="checkbox" name="q1" id="q1">
+                                    <label for="q1">What are two things in your life that have shaped who you are today?</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="q2" id="q2">
+                                    <label for="q2">What makes you really upset?</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="q3" id="q3">
+                                    <label for="q3">Write down three people who are where you want to be.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="q4" id="q4">
+                                    <label for="q4">Write down one thing that you admire about those 3 people.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="q5" id="q5">
+                                    <label for="q5">Go back through questions and evaluate answers.</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab4">
+                        <div class="pane-options-container">
+                            <div class="pull-left pane-options">TOOLS</div>
+                            <div class="pull-right pane-options print" onclick="myFunction()"><i class="fa fa-print" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="pane-questions-container">
+                            <ul class="pane-questions-list">
+                                <li>
+                                    <input type="checkbox" name="q6" id="q6">
+                                    <label for="q6">Write down 3 things you are scared of?</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="q7" id="q7">
+                                    <label for="q7">Find physical courage. Go do a physical activity you love, and then journal about your hopes and dreams.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="q8" id="q8">
+                                    <label for="q8">What is holding you back from living a meaningful life?</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="youtube-video.js"></script>
+        <script src="function.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,175 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(BebasNeue.otf);
+}
+
+.no-hor-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.navbar-container {
+    height: 85px;
+    /*padding-left: 155px;*/
+    /*padding-right: 155px;*/
+    background-color: #222222;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    padding-top: 32px;
+    width: 155px;
+    height: 83px;
+}
+
+.menu-item:hover {
+    border-bottom: solid 3px #5A90FF;
+}
+
+.menu-item a {
+    text-transform: uppercase;
+    font-family: BebasNeue,Tahoma,sans-serif;
+    font-size: 1.3em;
+    color: white;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.course-title-container {
+    text-align: center;
+}
+
+.course-title {
+    display: inline-block;
+    margin-top: 105px;
+    padding-bottom: 10px;
+    width: 500px;
+    background-color: black;
+}
+
+.course-title-main {
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: BebasNeue,Tahoma,sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+.course-title-sub {
+    margin-top: -5px;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.7em;
+}
+
+.video-container {
+    position: inherit;
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    text-align: center;
+}
+
+.iframe-container {
+    width: 60%;
+    min-width: 400px;
+    height: 100%;
+    display: inline-block;
+}
+
+.section-tabs {
+    width: 25%;
+    text-align: center;
+}
+
+.section-tabs a {
+    text-transform: uppercase;
+    font-family: BebasNeue,Tahoma,sans-serif;
+    font-size: 1em;
+    color: #555
+}
+
+.section-tabs a:hover {
+    color: #5A90FF;
+}
+
+.panes-container {
+    border-bottom: 1px solid lightgray;
+    height: auto;
+    min-height: 50px;
+}
+
+.pane-options-container {
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 40px;
+}
+
+.pane-options {
+    text-transform: uppercase;
+    font-family: BebasNeue,Tahoma,sans-serif;
+    font-size: 2em;
+    color: #555
+}
+
+.print {
+    cursor: pointer;
+}
+
+.print:hover {
+    color: #5A90FF;
+}
+
+.pane-questions-container {
+    margin-left: 50px;
+}
+
+.pane-questions-list {
+    list-style-type:none;
+}
+
+
+@media(max-width:790px) {
+    .menu-item {
+        width: 17vw;
+    }
+
+    .course-title {
+        width: 100%;
+    }
+}
+
+@media(max-width:400px) {
+    .iframe-container {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .navbar-container {
+        height: 65px;
+    }
+
+    .menu-item {
+        padding-top: 22px;
+    }
+
+    .pane-options-container {
+        margin-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pane-options {
+        text-transform: uppercase;
+        font-family: BebasNeue,Tahoma,sans-serif;
+        font-size: 1.5em;
+        color: #555
+    }
+}
